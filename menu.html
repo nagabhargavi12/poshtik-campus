@@ -7,6 +7,7 @@
 <body>
     <h1>Our Menu</h1>
     <p>Explore our healthy and nutritious campus food options.</p>
+
     <ul>
         <li>Jonna Rotte Wrap</li>
         <li>Sajja Roti Wrap</li>
@@ -19,9 +20,39 @@
         <li>Paneer Protein Bowl</li>
         <li>Millet Protein Shake</li>
     </ul>
+
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
+
+    <form>
+        <p>
+            <label for="customer">Your name</label>
+            <input type="text" id="customer" name="customer">
+        </p>
+        <p>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+        <p>
+            <label>Choose your dish</label>
+        </p>
+        <input type="radio" id="idli" name="dish" value="idli">
+        <label for="idli">Idli ₹30</label>
+        <input type="radio" id="thali" name="dish" value="veg-thali">
+        <label for="thali">Veg Thali ₹60</label>
+        <input type="radio" id="curd" name="dish" value="curd-rice">
+        <label for="curd">Curd Rice ₹35</label>
+        <p>
+            <label for="quantity">How many plates?</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </p>
+        <p>
+            <label for="notes">Anything else?</label>
+            <textarea id="notes" name="notes"></textarea>
+        </p>
+        <button type="submit">Place order</button>
+    </form>
 </body>
 </html>
