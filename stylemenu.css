@@ -52,3 +52,21 @@ legend {
     color: white;
     padding: 8px 16px;
 }
+header {
+    padding:6px;
+    text-align: center;
+    background-color:#2f5353;
+    font-size: 12px;
+    color:white;
+}
+nav {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #f2fffa;
+    border-bottom: 1px solid #2e8b57;
+}
+nav a {
+    text-decoration: none;
+    color: #2e8b57;
+}
