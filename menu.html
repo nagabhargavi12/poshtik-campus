@@ -3,44 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Poshtik Campus — Menu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemenu.css">
 </head>
 <body>
     <h1>Our Menu</h1>
     <p>Explore our healthy and nutritious campus food options.</p>
 
-    <ul>
-        <li>Jonna Rotte Wrap</li>
-        <li>Sajja Roti Wrap</li>
-        <li>Ragi Sangati Bowl</li>
-        <li>Ragi Idli Bowl</li>
-        <li>Pesarattu with Sprouts</li>
-        <li>Ulava Charu Protein Bowl</li>
-        <li>Gongura Sprouts Salad</li>
-        <li>Sprouts Moong Chilla</li>
-        <li>Paneer Protein Bowl</li>
-        <li>Millet Protein Shake</li>
-    </ul>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
+    <div class="menu">
 
+            <div class="dish">
+                <h2>Jonna Rotte Wrap</h2>
+                <p class="text">Telangana sorghum-flatbread wrap, loaded with crunchy vegetables.</p>
+                <p class="text">Price: Rs. 60</p>
+            </div>
+
+            <div class="dish">
+                <h2>Paneer Protein Bowl</h2>
+                <p class="text">Grilled paneer cubes over greens and grains.</p>
+                <p class="text">Price: Rs. 80</p>
+            </div>
+
+            <div class="dish">
+                <h2>Ragi Sangati Bowl</h2>
+                <p class="text">Classic Telangana finger-millet mudde bowl, served hot.</p>
+                <p class="text">Price: Rs. 55</p>
+            </div>
+
+    </div>
+
+    <button>Run the loop over poshtikMenu</button>
     <form>
-       <label for="name">Your Name</label>
-       <input type="text" id="name" name="name">
+       <label for="name">Your Name</label><br>
+       <input type="text" id="name" name="name" placeholder="type your real name"><br>
+       <label for="phone">Phone number</label><br>
+       <input type="tel" id="phone" name="phone" placeholder="10 digits"><br>
        <fieldset>
-           <legend>Choose your dish</legend>
-           <input type="radio" id="idli" name="dish" value="idli">
-           <label for="idli">Idli 30</label>
-           <br>
-           <input type="radio" id="thali" name="dish" value="thali">
-           <label for="thali">Veg Thali 60</label>
-           <br>
+           <legend>Pick your dish</legend>
+            <input type="radio" id="jonna" name="dish" value="jonna">
+            <label for="jonna">Jonna Rotte Wrap</label><br>
+
+            <input type="radio" id="sajja" name="dish" value="sajja">
+            <label for="sajja">Sajja Roti Wrap</label><br>
+
+            <input type="radio" id="ragi-sangati" name="dish" value="ragi-sangati">
+            <label for="ragi-sangati">Ragi Sangati Bowl</label><br>
+
+            <input type="radio" id="ragi-idli" name="dish" value="ragi-idli">
+            <label for="ragi-idli">Ragi Idli Bowl</label><br>
+
+            <input type="radio" id="pesarattu" name="dish" value="pesarattu">
+            <label for="pesarattu">Pesarattu with Sprouts</label><br>
+
+            <input type="radio" id="paneer" name="dish" value="paneer">
+<label for="paneer">Paneer Protein Bowl</label>
        </fieldset>
-       <input type="submit" id="submit" value="Place Order">
-    
+       <label for="quantity">Quantity</label><br>
+       <input type="text" id="quantity" name="quantity" required><br>
+       <input type="submit" class="submit" value="Place Order">&nbsp;&nbsp;&nbsp;
+       <input type="submit" id="check-order" class="submit" value="Check my order">
     </form>
+    <script src="script.js"></script>
 </body>
 </html>

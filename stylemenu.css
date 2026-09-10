@@ -1,0 +1,54 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dish {
+    border: 2px solid green;
+    padding: 15px;
+    width: 340px;
+    background-color: mintcream;
+    border-radius: 8px;
+    color: seagreen;
+    
+}
+.text {
+    color: black;
+    margin-bottom: 8px;
+}
+button {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form {
+    background-color: mintcream;
+    border: 2px solid seagreen;
+    padding: 16px;
+    width: 480px;
+}
+fieldset {
+    border: 2px solid seagreen;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    padding: 6px;
+    margin-bottom: 10px;
+}
+input[type="tel"] {
+    padding: 6px;
+    margin-bottom: 10px;
+}
+legend {
+    color: seagreen;
+    font-weight: 600;
+}
+.submit {
+    background-color: seagreen;
+    color: white;
+    padding: 8px 16px;
+}
