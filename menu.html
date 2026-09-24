@@ -1,79 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Poshtik Campus — Menu</title>
+    <title>Poshtik Campus Menu</title>
     <link rel="stylesheet" href="stylemenu.css">
 </head>
+
 <body>
-    <header>
-        <img src="poshtik-campus-logo.jpg" alt="Poshtik Campus Logo" width="100">
-        <h1>Poshtik Campus</h1>
-        <p>Healthy food, made on campus.</p>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
-        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
-        <a href="about.html">About</a>
-    </nav>
-    <h1>Our Menu</h1>
-    <p>Explore our healthy and nutritious campus food options.</p>
-    <div class="menu">
 
-            <div class="dish">
-                <img src="jonna-rotte-wrap.png" alt="jonna rotte" width="100">
-                <h2>Jonna Rotte Wrap</h2>
-                <p class="text">Telangana sorghum-flatbread wrap, loaded with crunchy vegetables.</p>
-                <p class="text">Price: Rs. 60</p>
-            </div>
+<header>
+    <img src="images/poshtik-campus-logo.jpg" alt="Poshtik Campus Logo">
 
-            <div class="dish">
-                <img src="paneer-protein-bowl.jpg" alt="protein bowl" width="100">
-                <h2>Paneer Protein Bowl</h2>
-                <p class="text">Grilled paneer cubes over greens and grains.</p>
-                <p class="text">Price: Rs. 80</p>
-            </div>
+    <h1>Poshtik Campus Menu</h1>
 
-            <div class="dish">
-                <img src="ragi-idli-bowl.jpg" alt="ragi sangati" width="100">
-                <h2>Ragi Sangati Bowl</h2>
-                <p class="text">Classic Telangana finger-millet mudde bowl, served hot.</p>
-                <p class="text">Price: Rs. 55</p>
-            </div>
+    <p>Healthy Food, Healthy Body, Healthy Mind</p>
+</header>
 
-    </div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+</nav>
 
-    <button>Run the loop over poshtikMenu</button>
-    <form>
-       <label for="name">Your Name</label><br>
-       <input type="text" id="name" name="name" placeholder="type your real name"><br>
-       <label for="phone">Phone number</label><br>
-       <input type="tel" id="phone" name="phone" placeholder="10 digits"><br>
-       <fieldset>
-           <legend>Pick your dish</legend>
-            <input type="radio" id="jonna" name="dish" value="jonna">
-            <label for="jonna">Jonna Rotte Wrap</label><br>
+<h2>Today's Healthy Ten</h2>
 
-            <input type="radio" id="sajja" name="dish" value="sajja">
-            <label for="sajja">Sajja Roti Wrap</label><br>
+<section id="dish-list"></section>
 
-            <input type="radio" id="ragi-sangati" name="dish" value="ragi-sangati">
-            <label for="ragi-sangati">Ragi Sangati Bowl</label><br>
+<h2>Order Here</h2>
 
-            <input type="radio" id="ragi-idli" name="dish" value="ragi-idli">
-            <label for="ragi-idli">Ragi Idli Bowl</label><br>
+<form id="order-form" novalidate>
 
-            <input type="radio" id="pesarattu" name="dish" value="pesarattu">
-            <label for="pesarattu">Pesarattu with Sprouts</label><br>
+    <label for="cust-name">Your name</label>
+    <br>
+    <input type="text" id="cust-name">
 
-            <input type="radio" id="paneer" name="dish" value="paneer">
-<label for="paneer">Paneer Protein Bowl</label>
-       </fieldset>
-       <label for="quantity">Quantity</label><br>
-       <input type="text" id="quantity" name="quantity" required><br>
-       <input type="submit" class="submit" value="Place Order">&nbsp;&nbsp;&nbsp;
-       <input type="submit" id="check-order" class="submit" value="Check my order">
-    </form>
-    <script src="script.js"></script>
+    <br><br>
+
+    <label for="cust-phone">Phone number</label>
+    <br>
+    <input type="text" id="cust-phone">
+
+    <br><br>
+
+    <fieldset>
+
+        <legend>Pick your dish</legend>
+
+        <input type="radio" id="dish-0" name="dish">
+        Jonna Rotte Wrap
+        <br>
+
+        <input type="radio" id="dish-1" name="dish">
+        Sajja Roti Wrap
+        <br>
+
+        <input type="radio" id="dish-2" name="dish">
+        Ragi Sangati Bowl
+        <br>
+
+        <input type="radio" id="dish-3" name="dish">
+        Ragi Idli Bowl
+        <br>
+
+        <input type="radio" id="dish-4" name="dish">
+        Pesarattu with Sprouts
+        <br>
+
+        <input type="radio" id="dish-5" name="dish">
+        Ulava Charu Protein Bowl
+        <br>
+
+        <input type="radio" id="dish-6" name="dish">
+        Gongura Sprouts Salad
+        <br>
+
+        <input type="radio" id="dish-7" name="dish">
+        Sprouts Moong Chilla
+        <br>
+
+        <input type="radio" id="dish-8" name="dish">
+        Paneer Protein Bowl
+        <br>
+
+        <input type="radio" id="dish-9" name="dish">
+        Millet Protein Shake
+
+    </fieldset>
+
+    <br>
+
+    <label for="qty">Quantity</label>
+    <br>
+    <input type="number" id="qty" value="1">
+
+    <br><br>
+
+    <label for="notes">Notes for the kitchen</label>
+    <br>
+    <textarea id="notes"></textarea>
+
+    <br><br>
+
+    <button type="submit">Place order</button>
+
+</form>
+
+<p id="order-result"></p>
+
+<footer>
+    © 2026 Poshtik Campus · orders@poshtikcampus.in
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
